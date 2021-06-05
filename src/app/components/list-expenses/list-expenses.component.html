@@ -1,0 +1,17 @@
+<div *ngFor="let expense of expenses" style="text-align: center;">
+  <h3>{{ expense.expense}}</h3>
+  <p>{{ expense.amount | currency: 'EUR'}}</p>
+</div>
+
+<style>
+  div{
+    text-align: center;
+  }
+  h3{
+    color: cornflowerblue;
+  }
+  p{
+    color: crimson;
+  }
+</style>
+
